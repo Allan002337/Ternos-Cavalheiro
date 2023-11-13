@@ -58,12 +58,12 @@
 							<div class="intro-excerpt">
 								<h1>Entre em Contato</h1>
 								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+								<p><a href="produtos.html" class="btn btn-secondary me-2">Compre Agora</a><a href="sobre.html" class="btn btn-white-outline">Sobre</a></p>
 							</div>
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
+								<img src="" class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -92,7 +92,7 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                      <p>R. Ercílio Antônio Meira - Jardim Santa Izabel, Hortolândia 280</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -105,7 +105,7 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>info@yourdomain.com</p>
+                      <p>cavalheiro@gmail.com</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -118,7 +118,7 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>+1 294 3925 3939</p>
+                      <p>+19 90993-0399</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -128,30 +128,63 @@
                 <div class="row">
                   <div class="col-6">
                     <div class="form-group">
-                      <label class="text-black" for="fname">First name</label>
-                      <input type="text" class="form-control" id="fname">
+                      <label class="text-black" for="fname">Nome</label>
+                      <input type="text " 
+					  required ="required" 
+					  name="nome"
+					  placeholder="Preencha aqui o seu nome!" 
+					  autofocus class="form-control" id="fname">
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="form-group">
-                      <label class="text-black" for="lname">Last name</label>
-                      <input type="text" class="form-control" id="lname">
+                      <label class="text-black" for="lname">Telefone</label>
+                      <input class="form-control" id="lname" input 
+					  pattern="^\d{2} \d{5}-\d{4}$" 
+					  title="Insira o telefone no formato 00 00000-0000" 
+					  required=""
+									 type="tel" 
+									 required ="required"
+									  name="phone"
+									  placeholder="00 00000-0000" 
+									  autofocus 
+									  />
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="text-black" for="email">Email address</label>
-                  <input type="email" class="form-control" id="email">
+                  <label class="text-black" for="email">Email</label>
+                  <input type="email" class="form-control" id="email"
+				  required ="required"
+				   name="email" 
+				   placeholder="nome@gmail.com" 
+				   autofocus 
+				   pattern="[a-z0-9. %+-]+@[a-z0-9. -]+\.[a-z]{2,4}$">
                 </div>
 
                 <div class="form-group mb-5">
-                  <label class="text-black" for="message">Message</label>
+                  <label class="text-black" for="message">Mensagem</label>
                   <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
+                <button type="submit" class="btn btn-primary-hover-outline">Enviar</button>
               </form>
 
+			  <style>
+				  textarea{
+					  resize: none;
+				  }
+
+				  .hero{
+							background: #0000008f;
+						}
+
+						.custom-navbar {
+							background: #2e2e2e !important;
+							padding-top: 20px;
+							padding-bottom: 20px;
+							}
+			  </style>
             </div>
 
           </div>
@@ -171,10 +204,6 @@
 		<!-- Start Footer Section -->
 		<footer class="footer-section">
 			<div class="container relative">
-
-				<div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
-				</div>
 
 				<div class="row">
 					<div class="col-lg-8">
@@ -219,13 +248,13 @@
 									<li><a href="sobre.html">Sobre</a></li>
 									<li><a href="servicos.html">Serviços</a></li>
 									<li><a href="parceiros.html">Parceiros</a></li>
-									<li><a href="contato.html">Contato</a></li>
 								</ul>
 							</div>
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
 									<li><a href="#">Suporte</a></li>
+									<li><a href="contato.html">Contato</a></li>
 								</ul>
 							</div>
 
